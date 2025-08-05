@@ -2,6 +2,8 @@ import pickle
 import pandas as pd
 
 # 读取 pkl 文件
+pkl_file_path = ""  # 请替换为您的 pkl 文件路径
+with open(pkl_file_path, 'rb') as file:
     data = pickle.load(file)
 # 设置显示选项
 pd.set_option('display.max_columns', None)  # 显示所有列
